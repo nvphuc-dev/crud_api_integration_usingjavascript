@@ -4,6 +4,7 @@
   "description": "How to integrate API in your application using Javascript and fetch method.\r <!-- \r 1. Node version: 12.18.4\r 2. JSON server - install JSON server (https://www.npmjs.com/package/json-server, https://github.com/typicode/json-server)\r     - npm init\r     - npm install json-server\r     - Create file db.json in api folder with json format.\r     - Start JSON Server: json-server --watch db.json\r     config start json server:\r     In package.json add [\"start\": \"json-server --watch db.json\",]\r     On terminal: [npm start] -->",
   "main": "index.js",
   "scripts": {
+    "start": "json-server --watch assets/api/db.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nvphuc-dev/crud_api_integration_usingjavascript/issues"
   },
-  "homepage": "https://github.com/nvphuc-dev/crud_api_integration_usingjavascript#readme"
+  "homepage": "https://github.com/nvphuc-dev/crud_api_integration_usingjavascript#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
 }

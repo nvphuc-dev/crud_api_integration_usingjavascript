@@ -8,5 +8,5 @@ How to integrate API in your application using Javascript and fetch method.
     - Create file db.json in api folder with json format.
     - Start JSON Server: json-server --watch db.json
     config start json server:
-    In package.json add ["start": "json-server --watch db.json",]
+    In package.json "script" add ["start": "json-server --watch assets/api/db.json",]
     On terminal: [npm start] -->

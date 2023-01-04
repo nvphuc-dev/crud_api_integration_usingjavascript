@@ -7,13 +7,13 @@
 	<title>CRUD API Integration using Javascript</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-	<link href="/assets/css/style.css" rel="stylesheet" media="all">
+	<link href="assets/css/style.css" rel="stylesheet" media="all">
 </head>
 <body>
 	<div class="container">
 		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-				<span class="fs-4 logo"><img src="/assets/img/logo.png" alt="Javascript" class="img-fluid"></span>
+				<span class="fs-4 logo"><img src="assets/img/logo.png" alt="Javascript" class="img-fluid"></span>
 			</a>
 		</header>
 	</div>
@@ -24,22 +24,14 @@
 					<table class="table table-bordered table-striped">
 						<thead>
 							<tr>
-								<th scope="col">#</th>
+								<th scope="col">ID</th>
 								<th scope="col">Full Name</th>
 								<th scope="col">Email</th>
 								<th scope="col">Actions</th>
 							</tr>
 						</thead>
 						<tbody id="renderApiData">
-							<tr>
-								<th scope="row">1</th>
-								<td>Kenvin Nguyen</td>
-								<td>kenvin@gmail.com</td>
-								<td>
-									<button type="button" class="btn btn-sm btn-primary">Edit</button>
-									<button type="button" class="btn btn-sm btn-danger">Delete</button>
-								</td>
-							</tr>
+							
 						</tbody>
 					</table>
 				</div>
@@ -58,8 +50,9 @@
 							<label for="email" class="form-label">Enter email</label>
 							<input type="email" class="form-control" id="email" placeholder="Ex: kenvin@gmail.com">
 						</div>
-						<div class="col-auto text-center">
-							<button type="button" class="btn btn-primary" onclick="addUser()">Submit</button>
+						<div class="col-auto">
+							<button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+							<span class="text-success" id="message"></span>
 						</div>
 					</div>
 				</div>
@@ -77,6 +70,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-	<script src="/assets/js/app.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>
