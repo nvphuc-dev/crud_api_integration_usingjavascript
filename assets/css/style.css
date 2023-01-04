@@ -1,0 +1,8 @@
+.logo{
+	max-width: 60px;
+}
+@media(max-width: 767px){
+	.table-responsive .table{
+		width: 580px;
+	}
+}
